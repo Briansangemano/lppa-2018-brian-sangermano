@@ -29,7 +29,7 @@ html, body{
 }
 
 .board li.alive {
-  background-color: #090;
+  background-color: black;
 }
 
  button {

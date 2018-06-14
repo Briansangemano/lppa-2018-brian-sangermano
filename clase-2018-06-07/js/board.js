@@ -8,6 +8,10 @@ var Board = {
      return document.getElementById('play');
   },
   getCells: function () {
+    var board = Board.getBoard();
+    return board.getElementsByTagName('li');
+  },
+  getAliveCells: function () {
     return document.getElementsByClassName('alive');
   },
   createCells: function () {

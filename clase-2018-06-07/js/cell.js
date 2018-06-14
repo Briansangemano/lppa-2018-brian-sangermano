@@ -1,6 +1,12 @@
 var Cell = {
-  isAlive: false,
-  changeColor: function (li) {
-    li.style.backgroundColor = '#f00'
+  toggle: function (evt) {
+    var cell = evt.target;
+    if(cell.className === 'alive'){
+      cell.className = '';
+    }
+    else {
+      cell.className = 'alive';
+    }
+    console.dir(cell);
   }
 }
