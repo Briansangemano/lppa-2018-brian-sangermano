@@ -6,6 +6,7 @@ var play = function () {
 }
 
 window.onload = function () {
+  Board.createCells();
   var btnPlay = Board.getPlayButton();
-  btnPlay.onclick = play; 
+  btnPlay.onclick = play;
 }
